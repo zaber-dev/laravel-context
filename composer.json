@@ -1,12 +1,14 @@
 {
     "name": "zaber-dev/laravel-context",
-    "description": "Application-level context-aware models and scoped child modeling for Laravel.",
+    "description": "Ambient execution context and boundary propagation for Laravel applications.",
     "keywords": [
         "laravel",
         "context",
+        "execution-context",
+        "context-propagation",
+        "execution-boundary",
         "scoped-models",
-        "sub-models",
-        "tenant"
+        "multi-tenancy"
     ],
     "license": "MIT",
     "authors": [
