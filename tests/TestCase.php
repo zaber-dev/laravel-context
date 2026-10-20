@@ -8,6 +8,8 @@ use Illuminate\Database\Schema\Blueprint;
 
 class TestCase extends Orchestra
 {
+    public static $latestResponse = null;
+    
     protected function setUp(): void
     {
         parent::setUp();
