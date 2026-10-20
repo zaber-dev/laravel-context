@@ -1,0 +1,61 @@
+{
+    "name": "zaber-dev/laravel-context",
+    "description": "Application-level context-aware models and scoped child modeling for Laravel.",
+    "keywords": [
+        "laravel",
+        "context",
+        "scoped-models",
+        "sub-models",
+        "tenant"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Md Mahedi Zaman Zaber",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/contracts": "^11.0|^12.0|^13.0",
+        "illuminate/database": "^11.0|^12.0|^13.0",
+        "illuminate/support": "^11.0|^12.0|^13.0",
+        "illuminate/validation": "^11.0|^12.0|^13.0",
+        "illuminate/routing": "^11.0|^12.0|^13.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "phpunit/phpunit": "^10.5|^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ZaberDev\\Context\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ZaberDev\\Context\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ZaberDev\\Context\\ContextServiceProvider"
+            ],
+            "aliases": {
+                "Context": "ZaberDev\\Context\\Facades\\Context"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
